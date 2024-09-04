@@ -43,7 +43,7 @@
 
             <div>
                 <label>Numero:</label><br>
-                <input type="text" name="numero" id="numero"><br>
+                <input type="number" name="numero" id="numero"><br>
             </div>
 
             <div>
@@ -86,40 +86,34 @@
         <br>
         <fieldset>
             <h1>Genêro</h1>
-            <label>
-                <input type="radio" name="masc" value="masc">Masculino
-            </label>
-            <label>
-                <input type="radio" name="fem" value="fem">Feminino
-            </label>
-            <label>
-                <input type="radio" name="Nao" value="Nao">Prefiro não informar
-            </label>
+            <input type="radio" id="masc" name="gen" value="masc">
+            <label for="masc">MASCULINO</label><br>
+            <input type="radio" id="fem" name="gen" value="fem">
+            <label for="fem">FEMININO</label><br>
+            <input type="radio" id="nao" name="gen" value="nao">
+            <label for="nao">Prefiro não informar</label><br>
         </fieldset>
         <br>
         <fieldset>
             <h1>Curso</h1>
             <input type="checkbox" id="ads" name="ads" value="ads">
-            <label for="ads">ADS</label>
+            <label for="ads">ADS</label><br>
             <input type="checkbox" id="jogos" name="jogos" value="jogos">
-            <label for="jogos">JOGOS</label>
+            <label for="jogos">JOGOS</label><br>
             <input type="checkbox" id="ti" name="ti" value="ti">
-            <label for="ti">GESTÂO de TI</label>
+            <label for="ti">GESTÂO de TI</label><br>
             <input type="checkbox" id="dados" name="dados" value="dados">
-            <label for="dados">BANCO DE DADOS</label>
+            <label for="dados">BANCO DE DADOS</label><br>
         </fieldset>
         <br>
         <fieldset>
             <h1>Modelo</h1>
-            <label>
-                <input type="radio" name="presen" value="presen">Presencial
-            </label>
-            <label>
-                <input type="radio" name="ead" value="ead">EAD
-            </label>
-            <label>
-                <input type="radio" name="semi" value="semi">Semi Presencial
-            </label>
+            <input type="radio" id="presen" name="modelo" value="presen">
+            <label for="presen">Presencial</label><br>
+            <input type="radio" id="ead" name="modelo" value="ead">
+            <label for="ead">EAD</label><br>
+            <input type="radio" id="semi" name="modelo" value="semi">
+            <label for="semi">Semi Presencial</label><br>
         </fieldset><br>
     </form>
 </body>
