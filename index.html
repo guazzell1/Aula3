@@ -3,11 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarefa Forms</title>
 </head>
 <body>
-    <h1>Tarefa forms</h1>
-    <h2>fodeu</h2>
-    asasasasasasasassa
+
+    <div>
+        <h1>Cadastro</h1>
+        <p>Preencha com as suas informções</p>
+    </div>
+
+    <form>
+        <label>Data:</label>
+        <input type="date"><br>
+        <fieldset>
+            <h1>Dados de Acesso</h1>
+            <div>
+                <label>Usuario:</label><br>
+                <input type="text" name="user" id="user"><br>
+            </div>
+            
+            <div>
+                <label>Senha:</label><br>
+                <input type="text" name="senha" id="senha"><br> 
+            </div>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <h1>Dados Pessoais</h1>
+            <div>
+                <label>Nome:</label> <br>
+                <input type="text" name="nome" id="nome"> <br>
+            </div>
+
+            <div>
+                <label>Endereço:</label> <br>
+                <input type="text" name="endereço" id="endereço"><br>
+            </div>
+
+            <div>
+                <label>Numero:</label><br>
+                <input type="text" name="numero" id="numero"><br>
+            </div>
+
+            <div>
+                <label>Complemento:</label><br>
+                <input type="text" name="complemento" id="complemento"><br>
+            </div>
+
+            <div>
+                <label for="cidade">Cidade:</label><br>
+                <input list="cidade" name="cidade">
+                <datalist id="cidade">
+                    <option value="Sorocaba">
+                    <option value="Campinas">
+                    <option value="Tanabi">
+                    <option value="Araçoiaba">
+                    <option value="Capela do Alto">
+                    <option value="Itu">
+                    <option value="Brasília">
+                    </option>
+                </datalist>
+            </div>
+
+            <div>
+                <label>Estado:</label><br>
+                <select id="estado">
+                    <option>São Paulo</option>
+                    <option>Minas Gerais</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Tocantins</option>
+                    <option>Roraima</option>
+                    <option>Acre</option>
+                </select> <br>
+            </div>
+
+            <div>
+                <label>CEP: </label><br>
+                <input type="text" name="cep" id="cep">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h1>Genêro</h1>
+            <label>
+                <input type="radio" name="masc" value="masc">Masculino
+            </label>
+            <label>
+                <input type="radio" name="fem" value="fem">Feminino
+            </label>
+            <label>
+                <input type="radio" name="Nao" value="Nao">Prefiro não informar
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h1>Curso</h1>
+            <input type="checkbox" id="ads" name="ads" value="ads">
+            <label for="ads">ADS</label>
+            <input type="checkbox" id="jogos" name="jogos" value="jogos">
+            <label for="jogos">JOGOS</label>
+            <input type="checkbox" id="ti" name="ti" value="ti">
+            <label for="ti">GESTÂO de TI</label>
+            <input type="checkbox" id="dados" name="dados" value="dados">
+            <label for="dados">BANCO DE DADOS</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h1>Modelo</h1>
+            <label>
+                <input type="radio" name="presen" value="presen">Presencial
+            </label>
+            <label>
+                <input type="radio" name="ead" value="ead">EAD
+            </label>
+            <label>
+                <input type="radio" name="semi" value="semi">Semi Presencial
+            </label>
+        </fieldset>
+    </form>
 </body>
 </html>
